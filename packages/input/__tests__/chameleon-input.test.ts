@@ -6,7 +6,6 @@ describe("chameleon-input", () => {
     const el = await fixture(html`
       <chameleon-input></chameleon-input>
     `);
-    debugger;
-    expect(Boolean(el.shadowRoot)).to.equal(true);
+    expect(Boolean(el.shadowRoot)).to.equal(null);
   });
 });
