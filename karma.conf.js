@@ -19,7 +19,8 @@ module.exports = config => {
         babel: true,
         nodeResolve: true,
         fileExtensions: [".ts"]
-      }
+      },
+      rollupPreprocessor: {}
     })
   );
   return config;
