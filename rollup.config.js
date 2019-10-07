@@ -284,5 +284,30 @@ export default [
       external: externalLibs
     },
     plugins: [...prodPlugins]
+  },
+  /**
+   * chameleon-table
+   */
+  {
+    input: "packages/table/src/chameleon-table.ts",
+    output: {
+      file: "packages/table/dist/chameleon-table.js",
+      format: "umd",
+      name: "chameleon-table",
+      globals: globalLibs,
+      external: externalLibs
+    },
+    plugins: [...devPlugins]
+  },
+  {
+    input: "packages/table/src/chameleon-table.ts",
+    output: {
+      file: "packages/table/dist/chameleon-table.min.js",
+      format: "umd",
+      name: "chameleon-table",
+      globals: globalLibs,
+      external: externalLibs
+    },
+    plugins: [...prodPlugins]
   }
 ];
